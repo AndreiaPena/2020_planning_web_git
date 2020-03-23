@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="js" href="index.html">
-<link rel="sql" href="js.html">
-<link rel="js" href="timeline.html">
+    <link rel="js" href="js.html">
+<link rel="sql" href="sql.html">
 </head>
 <body>
+<style>
+table,
+td {
+    border: 1px solid #333;
+}
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+</style>
     <nav>
         <ul>
             <li><a href="index.html">index</a></li>
@@ -21,19 +32,22 @@
     <h1>Bienvenue sur mon planning de formation</h1>
     <p> Je suis Andreia, apprenante de la Promo 2 Montrouge Simplon, motivée pour cette formation !</p>
     </section>
-    <article>
-        SQL est un langage informatique normalisé servant à exploiter des bases de données relationnelles. La partie langage de manipulation des données de SQL permet de rechercher, d'ajouter, de modifier ou de supprimer des données dans les bases de données relationnelles. 
-    </article>
-    <article>
-        SQL est un moyen de crée des tableaux, faire des bases de données. C'est du back-end.
-    </article>
-    <article>
-        SELECT nom, service
-FROM   employe
-WHERE  statut = 'stagiaire'
-ORDER  BY nom;
-    </article>
-    <aside> J'ai le rêve qu'un jour mes quatre enfants vivront dans une nation où ils ne seront pas jugés pour la couleur de leur peau, mais pour leur caractère.</aside>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Planification de ma formation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Date</td>
+                <td>Sujet</td>
+                <td>Description</td>
+                <td>Commentaire</td>
+            </tr>
+        </tbody>
+    </table>
+    <aside></aside>
     <footer>
         <p>Pena</p>
         <p>Andreia</p>
